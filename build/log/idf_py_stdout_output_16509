@@ -1,0 +1,355 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32p4
+NOTICE: Processing 5 dependencies:
+NOTICE: [1/5] espressif/cmake_utilities (0.5.3)
+NOTICE: [2/5] espressif/esp_lcd_ek79007 (2.0.2)
+NOTICE: [3/5] espressif/esp_lcd_touch (1.2.1)
+NOTICE: [4/5] espressif/esp_lcd_touch_gt911 (1.2.0~2)
+NOTICE: [5/5] idf (5.5.0)
+-- Project sdkconfig file /root/projects/np2kai_p4/sdkconfig
+Loading defaults file /root/projects/np2kai_p4/sdkconfig.defaults...
+warning: unknown kconfig symbol 'SPIRAM_MODE_OCT' assigned to 'y' in /root/projects/np2kai_p4/sdkconfig.defaults
+warning: unknown kconfig symbol 'LCD_DSI_DMA_2D_IN_PSRAM' assigned to 'y' in /root/projects/np2kai_p4/sdkconfig.defaults
+-- Adding linker script /root/esp/esp-idf/components/riscv/ld/rom.api.ld
+-- USING O3
+-- App "np2kai_p4" version: 1
+-- Adding linker script /root/projects/np2kai_p4/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /root/projects/np2kai_p4/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /root/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.ld
+-- Adding linker script /root/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.api.ld
+-- Adding linker script /root/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.rvfp.ld
+-- Adding linker script /root/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.wdt.ld
+-- Adding linker script /root/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.systimer.ld
+-- Adding linker script /root/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.version.ld
+-- Adding linker script /root/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.libc.ld
+-- Adding linker script /root/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.libc-suboptimal_for_misaligned_mem.ld
+-- Adding linker script /root/esp/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.newlib.ld
+-- Adding linker script /root/esp/esp-idf/components/soc/esp32p4/ld/esp32p4.peripherals.ld
+-- ESP_LCD_EK79007: 2.0.2
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__cmake_utilities espressif__esp_lcd_ek79007 espressif__esp_lcd_touch espressif__esp_lcd_touch_gt911 esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /root/esp/esp-idf/components/app_trace /root/esp/esp-idf/components/app_update /root/esp/esp-idf/components/bootloader /root/esp/esp-idf/components/bootloader_support /root/esp/esp-idf/components/bt /root/esp/esp-idf/components/cmock /root/esp/esp-idf/components/console /root/esp/esp-idf/components/cxx /root/esp/esp-idf/components/driver /root/esp/esp-idf/components/efuse /root/esp/esp-idf/components/esp-tls /root/esp/esp-idf/components/esp_adc /root/esp/esp-idf/components/esp_app_format /root/esp/esp-idf/components/esp_bootloader_format /root/esp/esp-idf/components/esp_coex /root/esp/esp-idf/components/esp_common /root/esp/esp-idf/components/esp_driver_ana_cmpr /root/esp/esp-idf/components/esp_driver_bitscrambler /root/esp/esp-idf/components/esp_driver_cam /root/esp/esp-idf/components/esp_driver_dac /root/esp/esp-idf/components/esp_driver_gpio /root/esp/esp-idf/components/esp_driver_gptimer /root/esp/esp-idf/components/esp_driver_i2c /root/esp/esp-idf/components/esp_driver_i2s /root/esp/esp-idf/components/esp_driver_isp /root/esp/esp-idf/components/esp_driver_jpeg /root/esp/esp-idf/components/esp_driver_ledc /root/esp/esp-idf/components/esp_driver_mcpwm /root/esp/esp-idf/components/esp_driver_parlio /root/esp/esp-idf/components/esp_driver_pcnt /root/esp/esp-idf/components/esp_driver_ppa /root/esp/esp-idf/components/esp_driver_rmt /root/esp/esp-idf/components/esp_driver_sdio /root/esp/esp-idf/components/esp_driver_sdm /root/esp/esp-idf/components/esp_driver_sdmmc /root/esp/esp-idf/components/esp_driver_sdspi /root/esp/esp-idf/components/esp_driver_spi /root/esp/esp-idf/components/esp_driver_touch_sens /root/esp/esp-idf/components/esp_driver_tsens /root/esp/esp-idf/components/esp_driver_twai /root/esp/esp-idf/components/esp_driver_uart /root/esp/esp-idf/components/esp_driver_usb_serial_jtag /root/esp/esp-idf/components/esp_eth /root/esp/esp-idf/components/esp_event /root/esp/esp-idf/components/esp_gdbstub /root/esp/esp-idf/components/esp_hid /root/esp/esp-idf/components/esp_http_client /root/esp/esp-idf/components/esp_http_server /root/esp/esp-idf/components/esp_https_ota /root/esp/esp-idf/components/esp_https_server /root/esp/esp-idf/components/esp_hw_support /root/esp/esp-idf/components/esp_lcd /root/esp/esp-idf/components/esp_local_ctrl /root/esp/esp-idf/components/esp_mm /root/esp/esp-idf/components/esp_netif /root/esp/esp-idf/components/esp_netif_stack /root/esp/esp-idf/components/esp_partition /root/esp/esp-idf/components/esp_phy /root/esp/esp-idf/components/esp_pm /root/esp/esp-idf/components/esp_psram /root/esp/esp-idf/components/esp_ringbuf /root/esp/esp-idf/components/esp_rom /root/esp/esp-idf/components/esp_security /root/esp/esp-idf/components/esp_system /root/esp/esp-idf/components/esp_timer /root/esp/esp-idf/components/esp_vfs_console /root/esp/esp-idf/components/esp_wifi /root/esp/esp-idf/components/espcoredump /root/projects/np2kai_p4/managed_components/espressif__cmake_utilities /root/projects/np2kai_p4/managed_components/espressif__esp_lcd_ek79007 /root/projects/np2kai_p4/managed_components/espressif__esp_lcd_touch /root/projects/np2kai_p4/managed_components/espressif__esp_lcd_touch_gt911 /root/esp/esp-idf/components/esptool_py /root/esp/esp-idf/components/fatfs /root/esp/esp-idf/components/freertos /root/esp/esp-idf/components/hal /root/esp/esp-idf/components/heap /root/esp/esp-idf/components/http_parser /root/esp/esp-idf/components/idf_test /root/esp/esp-idf/components/ieee802154 /root/esp/esp-idf/components/json /root/esp/esp-idf/components/log /root/esp/esp-idf/components/lwip /root/projects/np2kai_p4/main /root/esp/esp-idf/components/mbedtls /root/esp/esp-idf/components/mqtt /root/esp/esp-idf/components/newlib /root/esp/esp-idf/components/nvs_flash /root/esp/esp-idf/components/nvs_sec_provider /root/esp/esp-idf/components/openthread /root/esp/esp-idf/components/partition_table /root/esp/esp-idf/components/protobuf-c /root/esp/esp-idf/components/protocomm /root/esp/esp-idf/components/pthread /root/esp/esp-idf/components/riscv /root/esp/esp-idf/components/rt /root/esp/esp-idf/components/sdmmc /root/esp/esp-idf/components/soc /root/esp/esp-idf/components/spi_flash /root/esp/esp-idf/components/spiffs /root/esp/esp-idf/components/tcp_transport /root/esp/esp-idf/components/ulp /root/esp/esp-idf/components/unity /root/esp/esp-idf/components/usb /root/esp/esp-idf/components/vfs /root/esp/esp-idf/components/wear_levelling /root/esp/esp-idf/components/wifi_provisioning /root/esp/esp-idf/components/wpa_supplicant
+-- Configuring done (23.9s)
+-- Generating done (6.0s)
+-- Build files have been written to: /root/projects/np2kai_p4/build
+[1/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /root/projects/np2kai_p4/main/main.c:1:
+/root/projects/np2kai_p4/main/compiler.h:14:9: warning: "SUPPORT_IA32" redefined
+   14 | #define SUPPORT_IA32
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:15:9: warning: "SUPPORT_PC9821" redefined
+   15 | #define SUPPORT_PC9821
+      |         ^~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:16:9: warning: "SUPPORT_PEGC" redefined
+   16 | #define SUPPORT_PEGC
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:20:9: warning: "SUPPORT_NP2_TICKCOUNT" redefined
+   20 | #define SUPPORT_NP2_TICKCOUNT
+      |         ^~~~~~~~~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:22:9: warning: "USE_TSC" redefined
+   22 | #define USE_TSC
+      |         ^~~~~~~
+<command-line>: note: this is the location of the previous definition
+[2/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/np2_dosio.c.obj
+In file included from /root/projects/np2kai_p4/main/np2_dosio.c:1:
+/root/projects/np2kai_p4/main/compiler.h:14:9: warning: "SUPPORT_IA32" redefined
+   14 | #define SUPPORT_IA32
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:15:9: warning: "SUPPORT_PC9821" redefined
+   15 | #define SUPPORT_PC9821
+      |         ^~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:16:9: warning: "SUPPORT_PEGC" redefined
+   16 | #define SUPPORT_PEGC
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:20:9: warning: "SUPPORT_NP2_TICKCOUNT" redefined
+   20 | #define SUPPORT_NP2_TICKCOUNT
+      |         ^~~~~~~~~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:22:9: warning: "USE_TSC" redefined
+   22 | #define USE_TSC
+      |         ^~~~~~~
+<command-line>: note: this is the location of the previous definition
+[3/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/np2_timing.c.obj
+In file included from /root/projects/np2kai_p4/main/np2_timing.c:1:
+/root/projects/np2kai_p4/main/compiler.h:14:9: warning: "SUPPORT_IA32" redefined
+   14 | #define SUPPORT_IA32
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:15:9: warning: "SUPPORT_PC9821" redefined
+   15 | #define SUPPORT_PC9821
+      |         ^~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:16:9: warning: "SUPPORT_PEGC" redefined
+   16 | #define SUPPORT_PEGC
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:20:9: warning: "SUPPORT_NP2_TICKCOUNT" redefined
+   20 | #define SUPPORT_NP2_TICKCOUNT
+      |         ^~~~~~~~~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:22:9: warning: "USE_TSC" redefined
+   22 | #define USE_TSC
+      |         ^~~~~~~
+<command-line>: note: this is the location of the previous definition
+[4/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/np2_sound.c.obj
+In file included from /root/projects/np2kai_p4/main/np2_sound.c:1:
+/root/projects/np2kai_p4/main/compiler.h:14:9: warning: "SUPPORT_IA32" redefined
+   14 | #define SUPPORT_IA32
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:15:9: warning: "SUPPORT_PC9821" redefined
+   15 | #define SUPPORT_PC9821
+      |         ^~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:16:9: warning: "SUPPORT_PEGC" redefined
+   16 | #define SUPPORT_PEGC
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:20:9: warning: "SUPPORT_NP2_TICKCOUNT" redefined
+   20 | #define SUPPORT_NP2_TICKCOUNT
+      |         ^~~~~~~~~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:22:9: warning: "USE_TSC" redefined
+   22 | #define USE_TSC
+      |         ^~~~~~~
+<command-line>: note: this is the location of the previous definition
+[5/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/np2_stubs.c.obj
+In file included from /root/projects/np2kai_p4/main/np2_stubs.c:1:
+/root/projects/np2kai_p4/main/compiler.h:14:9: warning: "SUPPORT_IA32" redefined
+   14 | #define SUPPORT_IA32
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:15:9: warning: "SUPPORT_PC9821" redefined
+   15 | #define SUPPORT_PC9821
+      |         ^~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:16:9: warning: "SUPPORT_PEGC" redefined
+   16 | #define SUPPORT_PEGC
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:20:9: warning: "SUPPORT_NP2_TICKCOUNT" redefined
+   20 | #define SUPPORT_NP2_TICKCOUNT
+      |         ^~~~~~~~~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:22:9: warning: "USE_TSC" redefined
+   22 | #define USE_TSC
+      |         ^~~~~~~
+<command-line>: note: this is the location of the previous definition
+[6/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios13.c.obj
+[7/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/np2_input.c.obj
+In file included from /root/projects/np2kai_p4/main/np2_input.c:1:
+/root/projects/np2kai_p4/main/compiler.h:14:9: warning: "SUPPORT_IA32" redefined
+   14 | #define SUPPORT_IA32
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:15:9: warning: "SUPPORT_PC9821" redefined
+   15 | #define SUPPORT_PC9821
+      |         ^~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:16:9: warning: "SUPPORT_PEGC" redefined
+   16 | #define SUPPORT_PEGC
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:20:9: warning: "SUPPORT_NP2_TICKCOUNT" redefined
+   20 | #define SUPPORT_NP2_TICKCOUNT
+      |         ^~~~~~~~~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:22:9: warning: "USE_TSC" redefined
+   22 | #define USE_TSC
+      |         ^~~~~~~
+<command-line>: note: this is the location of the previous definition
+[8/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios.c.obj
+/root/projects/np2kai/bios/bios.c:50:9: warning: "USE_CUSTOM_HOOKINST" redefined
+   50 | #define USE_CUSTOM_HOOKINST
+      |         ^~~~~~~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+[9/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios12.c.obj
+[10/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios18.c.obj
+[11/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios1a.c.obj
+[12/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios1b.c.obj
+[13/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios09.c.obj
+[14/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios0c.c.obj
+[15/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios19.c.obj
+[16/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios1c.c.obj
+[17/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/bios1f.c.obj
+[18/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/bios/sxsibios.c.obj
+/root/projects/np2kai/bios/sxsibios.c: In function 'sasibios_read':
+/root/projects/np2kai/bios/sxsibios.c:145:17: warning: variable 'posbase' set but not used [-Wunused-but-set-variable]
+  145 |         FILEPOS posbase;
+      |                 ^~~~~~~
+/root/projects/np2kai/bios/sxsibios.c: In function 'scsibios_read':
+/root/projects/np2kai/bios/sxsibios.c:245:17: warning: variable 'posbase' set but not used [-Wunused-but-set-variable]
+  245 |         FILEPOS posbase;
+      |                 ^~~~~~~
+[19/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/calendar.c.obj
+[20/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/amd98.c.obj
+[21/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/atapicmd.c.obj
+/root/projects/np2kai/cbus/atapicmd.c:17:9: warning: "TRACEOUT" redefined
+   17 | #define TRACEOUT(s)     (void)(s)
+      |         ^~~~~~~~
+In file included from /root/projects/np2kai/cbus/atapicmd.c:1:
+/root/projects/np2kai_p4/main/compiler.h:113:9: note: this is the location of the previous definition
+  113 | #define TRACEOUT(a)         do { (void)(a); } while(0)
+      |         ^~~~~~~~
+[22/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/board14.c.obj
+[23/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/board26k.c.obj
+[24/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/np2_memory.c.obj
+In file included from /root/projects/np2kai_p4/main/np2_memory.c:1:
+/root/projects/np2kai_p4/main/compiler.h:14:9: warning: "SUPPORT_IA32" redefined
+   14 | #define SUPPORT_IA32
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:15:9: warning: "SUPPORT_PC9821" redefined
+   15 | #define SUPPORT_PC9821
+      |         ^~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:16:9: warning: "SUPPORT_PEGC" redefined
+   16 | #define SUPPORT_PEGC
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:20:9: warning: "SUPPORT_NP2_TICKCOUNT" redefined
+   20 | #define SUPPORT_NP2_TICKCOUNT
+      |         ^~~~~~~~~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:22:9: warning: "USE_TSC" redefined
+   22 | #define USE_TSC
+      |         ^~~~~~~
+<command-line>: note: this is the location of the previous definition
+[25/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/board86.c.obj
+[26/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/boardlol.c.obj
+/root/projects/np2kai/cbus/boardlol.c: In function 'opn_o18a':
+/root/projects/np2kai/cbus/boardlol.c:25:17: warning: variable 'addr' set but not used [-Wunused-but-set-variable]
+   25 |         UINT    addr;
+      |                 ^~~~
+[27/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/boardmo.c.obj
+/root/projects/np2kai/cbus/boardmo.c: In function 'opn_o18a':
+/root/projects/np2kai/cbus/boardmo.c:50:47: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+   50 |                 S98_put(NORMAL2608, addr, dat);
+      |                                               ^
+[28/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/board118.c.obj
+[29/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/boardso.c.obj
+[30/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/boardspb.c.obj
+[31/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/boardx2.c.obj
+[32/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/cbuscore.c.obj
+[33/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/ct1741io.c.obj
+[34/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/boardpx.c.obj
+[35/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/boardsb16.c.obj
+[36/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/cs4231io.c.obj
+[37/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/mpu98ii.c.obj
+[38/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/pc9861k.c.obj
+[39/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/ct1745io.c.obj
+[40/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/gpibio.c.obj
+[41/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/ideio.c.obj
+[42/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/sasiio.c.obj
+[43/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/scsicmd.c.obj
+[44/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/pcm86io.c.obj
+[45/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/scsiio.c.obj
+[46/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/cbus/smpu98.c.obj
+[47/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/eucsjis.c.obj
+[48/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/sjiseuc.c.obj
+[49/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/sjisucs2.c.obj
+[50/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/eucucs2.c.obj
+[51/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/jisucs2.c.obj
+[52/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/tcswap16.c.obj
+[53/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/tcswap32.c.obj
+[54/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/textcnv.c.obj
+[55/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/ucs2ucs4.c.obj
+[56/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/ucs2utf8.c.obj
+[57/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/ucs4ucs2.c.obj
+[58/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/utf8ucs2.c.obj
+[59/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/utf8ucs4.c.obj
+[60/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/ucs2sjis.c.obj
+[61/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/codecnv/ucs4utf8.c.obj
+[62/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/bmpdata.c.obj
+[63/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/lstarray.c.obj
+[64/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/_memory.c.obj
+[65/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/mimpidef.c.obj
+[66/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/parts.c.obj
+[67/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/milstr.c.obj
+/root/projects/np2kai/common/milstr.c: In function 'milstr_getarg':
+/root/projects/np2kai/common/milstr.c:887:50: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  887 |                         else if ((quot) || (*str < '\0') || (*str > ' ')) {
+      |                                                  ^
+[68/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/rect.c.obj
+[69/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/resize.c.obj
+[70/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/strres.c.obj
+[71/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/textfile.c.obj
+[72/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/cd/cdd_ccd.c.obj
+[73/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/cd/cdd_cue.c.obj
+[74/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/cd/cdd_iso.c.obj
+[75/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/cd/cdd_libcdio.c.obj
+[76/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/profile.c.obj
+[77/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/common/wavefile.c.obj
+[78/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/cd/cdd_mds.c.obj
+[79/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/cd/cdd_nrg.c.obj
+[80/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/cd/cdd_real.c.obj
+[81/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/fd/fdd_bkdsk.c.obj
+[82/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/fd/fdd_d88.c.obj
+[83/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/fd/fdd_dcp.c.obj
+[84/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/fd/fdd_vfdd.c.obj
+[85/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/np2_display.c.obj
+In file included from /root/projects/np2kai_p4/main/np2_display.c:1:
+/root/projects/np2kai_p4/main/compiler.h:14:9: warning: "SUPPORT_IA32" redefined
+   14 | #define SUPPORT_IA32
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:15:9: warning: "SUPPORT_PC9821" redefined
+   15 | #define SUPPORT_PC9821
+      |         ^~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:16:9: warning: "SUPPORT_PEGC" redefined
+   16 | #define SUPPORT_PEGC
+      |         ^~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:20:9: warning: "SUPPORT_NP2_TICKCOUNT" redefined
+   20 | #define SUPPORT_NP2_TICKCOUNT
+      |         ^~~~~~~~~~~~~~~~~~~~~
+<command-line>: note: this is the location of the previous definition
+/root/projects/np2kai_p4/main/compiler.h:22:9: warning: "USE_TSC" redefined
+   22 | #define USE_TSC
+      |         ^~~~~~~
+<command-line>: note: this is the location of the previous definition
+[86/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/fd/fdd_xdf.c.obj
+[87/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/fddfile.c.obj
+[88/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/fdd/fdd_mtr.c.obj
+[89/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/fd/fdd_nfd.c.obj
+[90/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/img_strres.c.obj
+[91/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/fdd/diskdrv.c.obj
+[92/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/fdd/newdisk.c.obj
+[93/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/fdd/sxsicd.c.obj
+[94/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/fdd/sxsihdd.c.obj
+[95/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/fdd/sxsihdd_nvl.c.obj
+[96/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/fontdata.c.obj
+[97/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/font.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/font.c.obj 
+/root/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5\" -DNP2KAI_GIT_HASH=\"0000000\" -DNP2KAI_GIT_TAG=\"esp32p4-port\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DSUPPORT_IA32 -DSUPPORT_IA32_HAXM -DSUPPORT_NP2_TICKCOUNT -DSUPPORT_PC9821 -DSUPPORT_PEGC -DUSE_CUSTOM_HOOKINST -DUSE_TSC -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/root/projects/np2kai_p4/build/config -I/root/projects/np2kai_p4/main -I/root/esp/esp-idf/components/newlib/platform_include -I/root/esp/esp-idf/components/freertos/config/include -I/root/esp/esp-idf/components/freertos/config/include/freertos -I/root/esp/esp-idf/components/freertos/config/riscv/include -I/root/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/root/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/root/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/root/esp/esp-idf/components/freertos/esp_additions/include -I/root/esp/esp-idf/components/esp_hw_support/include -I/root/esp/esp-idf/components/esp_hw_support/include/soc -I/root/esp/esp-idf/components/esp_hw_support/include/soc/esp32p4 -I/root/esp/esp-idf/components/esp_hw_support/dma/include -I/root/esp/esp-idf/components/esp_hw_support/ldo/include -I/root/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/root/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/root/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/root/esp/esp-idf/components/esp_hw_support/power_supply/include -I/root/esp/esp-idf/components/esp_hw_support/port/esp32p4/. -I/root/esp/esp-idf/components/esp_hw_support/port/esp32p4/include -I/root/esp/esp-idf/components/esp_hw_support/port/esp32p4/private_include -I/root/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32p4/. -I/root/esp/esp-idf/components/heap/include -I/root/esp/esp-idf/components/heap/tlsf -I/root/esp/esp-idf/components/log/include -I/root/esp/esp-idf/components/soc/include -I/root/esp/esp-idf/components/soc/esp32p4 -I/root/esp/esp-idf/components/soc/esp32p4/include -I/root/esp/esp-idf/components/soc/esp32p4/register -I/root/esp/esp-idf/components/hal/platform_port/include -I/root/esp/esp-idf/components/hal/esp32p4/include -I/root/esp/esp-idf/components/hal/include -I/root/esp/esp-idf/components/esp_rom/include -I/root/esp/esp-idf/components/esp_rom/esp32p4/include -I/root/esp/esp-idf/components/esp_rom/esp32p4/include/esp32p4 -I/root/esp/esp-idf/components/esp_rom/esp32p4 -I/root/esp/esp-idf/components/esp_common/include -I/root/esp/esp-idf/components/esp_system/include -I/root/esp/esp-idf/components/esp_system/port/soc -I/root/esp/esp-idf/components/esp_system/port/include/riscv -I/root/esp/esp-idf/components/esp_system/port/include/private -I/root/esp/esp-idf/components/riscv/include -I/root/esp/esp-idf/components/lwip/include -I/root/esp/esp-idf/components/lwip/include/apps -I/root/esp/esp-idf/components/lwip/include/apps/sntp -I/root/esp/esp-idf/components/lwip/lwip/src/include -I/root/esp/esp-idf/components/lwip/port/include -I/root/esp/esp-idf/components/lwip/port/freertos/include -I/root/esp/esp-idf/components/lwip/port/esp32xx/include -I/root/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/root/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/root/esp/esp-idf/components/driver/deprecated -I/root/esp/esp-idf/components/driver/i2c/include -I/root/esp/esp-idf/components/driver/touch_sensor/include -I/root/esp/esp-idf/components/driver/twai/include -I/root/esp/esp-idf/components/esp_pm/include -I/root/esp/esp-idf/components/esp_ringbuf/include -I/root/esp/esp-idf/components/esp_driver_gpio/include -I/root/esp/esp-idf/components/esp_driver_pcnt/include -I/root/esp/esp-idf/components/esp_driver_gptimer/include -I/root/esp/esp-idf/components/esp_driver_spi/include -I/root/esp/esp-idf/components/esp_driver_mcpwm/include -I/root/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/root/esp/esp-idf/components/esp_driver_i2s/include -I/root/esp/esp-idf/components/esp_driver_sdmmc/include -I/root/esp/esp-idf/components/sdmmc/include -I/root/esp/esp-idf/components/esp_driver_sdspi/include -I/root/esp/esp-idf/components/esp_driver_sdio/include -I/root/esp/esp-idf/components/esp_driver_dac/include -I/root/esp/esp-idf/components/esp_driver_rmt/include -I/root/esp/esp-idf/components/esp_driver_tsens/include -I/root/esp/esp-idf/components/esp_driver_sdm/include -I/root/esp/esp-idf/components/esp_driver_i2c/include -I/root/esp/esp-idf/components/esp_driver_uart/include -I/root/esp/esp-idf/components/vfs/include -I/root/esp/esp-idf/components/esp_driver_ledc/include -I/root/esp/esp-idf/components/esp_driver_parlio/include -I/root/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/root/esp/esp-idf/components/esp_driver_twai/include -I/root/esp/esp-idf/components/esp_lcd/include -I/root/esp/esp-idf/components/esp_lcd/interface -I/root/esp/esp-idf/components/esp_lcd/rgb/include -I/root/esp/esp-idf/components/esp_lcd/dsi/include -I/root/esp/esp-idf/components/fatfs/diskio -I/root/esp/esp-idf/components/fatfs/src -I/root/esp/esp-idf/components/fatfs/vfs -I/root/esp/esp-idf/components/wear_levelling/include -I/root/esp/esp-idf/components/esp_partition/include -I/root/esp/esp-idf/components/nvs_flash/include -I/root/esp/esp-idf/components/esp_psram/include -I/root/esp/esp-idf/components/esp_psram/xip_impl/include -I/root/projects/np2kai_p4/managed_components/espressif__esp_lcd_ek79007/include -I/root/projects/np2kai_p4/managed_components/espressif__esp_lcd_touch_gt911/include -I/root/projects/np2kai_p4/managed_components/espressif__esp_lcd_touch/include -isystem /root/projects/np2kai -isystem /root/projects/np2kai/i386c -isystem /root/projects/np2kai/i386c/ia32 -isystem /root/projects/np2kai/i386c/ia32/instructions -isystem /root/projects/np2kai/i386c/ia32/instructions/fpu -isystem /root/projects/np2kai/bios -isystem /root/projects/np2kai/cbus -isystem /root/projects/np2kai/common -isystem /root/projects/np2kai/diskimage -isystem /root/projects/np2kai/diskimage/cd -isystem /root/projects/np2kai/diskimage/fd -isystem /root/projects/np2kai/fdd -isystem /root/projects/np2kai/font -isystem /root/projects/np2kai/generic -isystem /root/projects/np2kai/io -isystem /root/projects/np2kai/io/pci -isystem /root/projects/np2kai/mem -isystem /root/projects/np2kai/misc -isystem /root/projects/np2kai/sound -isystem /root/projects/np2kai/sound/getsnd -isystem /root/projects/np2kai/vram -isystem /root/projects/np2kai_p4/main/. -march=rv32imafc_zicsr_zifencei_xesppie -mabi=ilp32f  -fdiagnostics-color=always -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Os -freorder-blocks -fmacro-prefix-map=/root/projects/np2kai_p4=. -fmacro-prefix-map=/root/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-incompatible-pointer-types -Wno-implicit-function-declaration -Wno-int-conversion -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast -Wno-unused-value -Wno-unused-variable -Wno-unused-function -Wno-unused-const-variable -Wno-format -Wno-format-truncation -Wno-address -Wno-return-type -Wno-maybe-uninitialized -Wno-uninitialized -Wno-missing-braces -Wno-missing-field-initializers -Wno-unknown-pragmas -Wno-comment -Wno-parentheses -Wno-misleading-indentation -Wno-memset-elt-size -Wno-strict-aliasing -Wno-overflow -DESP_LCD_EK79007_VER_MAJOR=2 -DESP_LCD_EK79007_VER_MINOR=0 -DESP_LCD_EK79007_VER_PATCH=2 -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/font.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/font.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/font.c.obj -c /root/projects/np2kai/font/font.c
+/root/projects/np2kai/font/font.c:217:26: error: 'hf_buffer' undeclared here (not in a function); did you mean 'hf_bufloc'?
+  217 | static char* hf_bufloc = hf_buffer;
+      |                          ^~~~~~~~~
+      |                          hf_bufloc
+/root/projects/np2kai/font/font.c: In function 'hook_fontrom_flush':
+/root/projects/np2kai/font/font.c:259:31: error: 'hf_u16buffer' undeclared (first use in this function); did you mean 'hf_u16buffer_ptr'?
+  259 |     codecnv_jistoucs2(&ntype, hf_u16buffer, HF_BUFFERSIZE, hf_buffer, -1, hf_type);
+      |                               ^~~~~~~~~~~~
+      |                               hf_u16buffer_ptr
+/root/projects/np2kai/font/font.c:259:31: note: each undeclared identifier is reported only once for each function it appears in
+[98/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/fontfm7.c.obj
+[99/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/fontpc88.c.obj
+[100/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/fontpc98.c.obj
+[101/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/fontv98.c.obj
+[102/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/fdd/sxsi.c.obj
+[103/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/diskimage/cddfile.c.obj
+[104/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/fontmake.c.obj
+[105/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/fontx1.c.obj
+[106/282] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/root/projects/np2kai/font/fontx68k.c.obj
+ninja: build stopped: subcommand failed.

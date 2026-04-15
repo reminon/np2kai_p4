@@ -1,0 +1,2 @@
+source /root/projects/np2kai_p4/build/bootloader/gdbinit/symbols
+source /root/projects/np2kai_p4/build/bootloader/gdbinit/connect

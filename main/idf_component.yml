@@ -1,0 +1,5 @@
+dependencies:
+  idf:
+    version: '>=5.4.0'
+  espressif/esp_lcd_ek79007: "^2.0.0"
+  espressif/esp_lcd_touch_gt911: "^1.1.3"

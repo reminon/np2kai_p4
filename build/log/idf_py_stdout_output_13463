@@ -1,0 +1,15 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32p4
+NOTICE: Processing 5 dependencies:
+NOTICE: [1/5] espressif/cmake_utilities (0.5.3)
+NOTICE: [2/5] espressif/esp_lcd_ek79007 (2.0.2)
+NOTICE: [3/5] espressif/esp_lcd_touch (1.2.1)
+NOTICE: [4/5] espressif/esp_lcd_touch_gt911 (1.2.0~2)
+NOTICE: [5/5] idf (5.5.0)
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/root/projects/np2kai_p4 -B/root/projects/np2kai_p4/build
