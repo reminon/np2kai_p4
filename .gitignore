@@ -1,0 +1,7 @@
+# ESP-IDF Build Artifacts
+build/
+sdkconfig.old
+.ninja_*
+*.bin
+*.elf
+*.map

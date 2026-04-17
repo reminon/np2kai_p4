@@ -33,7 +33,6 @@ extern char *hf_bufloc;
 static void *psram_alloc(size_t size, const char *name) {
     void *p = heap_caps_malloc(size, MALLOC_CAP_SPIRAM);
     if (p) {
-        memset(p, 0, size);
         ESP_LOGI(TAG, "Allocated %s: %u KB at %p", name, (unsigned)(size/1024), p);
     } else {
         ESP_LOGE(TAG, "FAILED to allocate %s (%u KB)", name, (unsigned)(size/1024));

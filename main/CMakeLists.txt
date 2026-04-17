@@ -79,11 +79,14 @@ idf_component_register(
         fatfs
         sdmmc
         esp_driver_sdmmc
+        esp_driver_spi
         nvs_flash
         esp_psram
         esp_hw_support
         freertos
         esp_timer
+        esp_lcd
+        esp_driver_ledc
 )
 
 target_compile_definitions(${COMPONENT_LIB} PUBLIC

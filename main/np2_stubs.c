@@ -72,10 +72,35 @@ BRESULT fontmng_getfont(FNTDAT f, const OEMCHAR *s, UINT8 *b) { (void)f;(void)s;
 
 // ---- dosio ----
 FILEH file_open(const OEMCHAR *p) { return (FILEH)fopen(p,"r+b"); }
-FILEH file_open_rb(const OEMCHAR *p) { return (FILEH)fopen(p,"rb"); }
+FILEH file_open_rb(const OEMCHAR *p) {
+    if (!p || p[0] == '\0') {
+        // Print backtrace hint
+        printf("file_open_rb: empty path! caller=0x%08x\n", (unsigned)__builtin_return_address(0));
+        return FILEH_INVALID;
+    }
+
+    FILE *f = fopen(p, "rb");
+    printf("file_open_rb(%s) = %p\n", p, f);
+    return (FILEH)f;
+}
 FILEH file_create(const OEMCHAR *p) { return (FILEH)fopen(p,"w+b"); }
 void  file_close(FILEH h) { if(h) fclose((FILE*)h); }
-UINT  file_read(FILEH h, void *b, UINT s) { return (UINT)fread(b,1,s,(FILE*)h); }
+UINT file_read(FILEH h, void *b, UINT s) {
+    // Use bounce buffer in internal RAM for SDMMC DMA compatibility
+    static DRAM_ATTR uint8_t bounce[4096];
+    UINT total = 0;
+    uint8_t *dst = (uint8_t*)b;
+    printf("file_read: dst=%p size=%u\n", b, s);
+    while (total < s) {
+        UINT chunk = s - total;
+        if (chunk > sizeof(bounce)) chunk = sizeof(bounce);
+        UINT got = (UINT)fread(bounce, 1, chunk, (FILE*)h);
+        if (got == 0) break;
+        memcpy(dst + total, bounce, got);
+        total += got;
+    }
+    return total;
+}
 UINT  file_write(FILEH h, const void *b, UINT s) { return (UINT)fwrite(b,1,s,(FILE*)h); }
 long  file_seek(FILEH h, long o, int w) { fseek((FILE*)h,o,w); return ftell((FILE*)h); }
 UINT32 file_getsize(FILEH h) {
